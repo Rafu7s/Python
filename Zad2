@@ -1,0 +1,13 @@
+# Napisz program który:
+#
+# 1. Przypisuje zmiennej wartość będącą napisem
+# 2. Sprawdza czy pierwsza litera podanego napisu jest wielką literą
+
+zmienna1 = "Moj napis"
+print(zmienna1)
+
+print(zmienna1[0].isupper())
+
+duze = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+print(zmienna1[0] in duze)
