@@ -1,0 +1,24 @@
+# Napisz program który:
+# 1. Przypisuje zmiennej wartość będącą liczbą całkowitą
+# 2. Wypisuje typ tej zmiennej
+# 3. Przypisuje nowej zmiennej wartość poprzedniej zmiennej jako liczbę
+#    zmiennoprzecinkową
+# 4. Tworzy napis zawierający wartość zmiennej z liczbą
+#    zmiennoprzecinkową
+# 5. Wypisuje ten napis
+# 6. Wypisuje typy wszystkich zmiennych
+
+
+zmienna1 = 12
+print(type(zmienna1))
+
+zmienna2 = float(zmienna1)
+print(zmienna2)
+
+#napis = f"Jest ok {zmienna2}"
+#napis = "napis, %s" % zmiennay
+napis = "siemka {}".format(zmienna2)
+
+print(napis)
+
+print(type(zmienna1), type(zmienna2), type(napis))
