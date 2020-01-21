@@ -1,0 +1,21 @@
+# Zadanie
+#
+# Zmodyfikuj program `if4.py` tak by w przypadku zbyt niskiego wieku zwracał napis
+# "Brakuje lat: x", gdzie x to liczba lat po których warunek byłby spełniony
+#
+# Przykładowo dla `wiek = 10` komunikat powinien brzmieć: `Brakuje lat: 2`
+
+print("początek")
+
+wiek = int(input("Podaj swój wiek: "))
+
+minimalny_wiek = 12
+
+if wiek >= minimalny_wiek:
+    print("Zapraszamy na karuzelę")
+else:
+    print("Musisz jeszcze trochę poczekać")
+    if wiek < minimalny_wiek:
+        print("Brakuje lat: {}".format(minimalny_wiek - wiek))
+
+print("koniec")
