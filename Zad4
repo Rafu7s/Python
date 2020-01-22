@@ -1,0 +1,11 @@
+# Napisz program który:
+# 1. Przypisuje zmiennej wartość będącą napisem
+# 2. Wypisze ten napis tylko jeśli pierwsza litera podanego napisu jest wielką literą
+
+
+napis = "Pogoda jest ok"
+
+if napis[0].isupper():
+    print(napis)
+else:
+    print("zle")
