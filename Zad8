@@ -1,0 +1,15 @@
+# Napisz program który wypisuje liczby mniejsze od 100 które sa parzyste i
+# podzielne przez 3.
+
+ilosc = 100
+
+while ilosc > 1:
+    if ilosc % 2 == 0 and ilosc % 3 == 0:
+        print(ilosc)
+    ilosc -= 1
+
+print()
+
+for ilosc in range(1, 101):
+    if ilosc % 2 == 0 and ilosc % 3 == 0:
+        print(ilosc)
