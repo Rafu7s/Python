@@ -1,0 +1,8 @@
+# Napisz program który wypisze 100 razy "Będę automatyzować powtarzalne zadania"
+
+
+ilosc_razy = 1
+
+while 100 >= ilosc_razy:
+    print(f"{ilosc_razy} Będę automatyzować powtarzalne zadania")
+    ilosc_razy += 1
