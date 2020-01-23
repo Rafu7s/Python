@@ -1,0 +1,16 @@
+# Zmodyfikuj istniejący program tak by:
+# 1. Cena paliwa w PLN była pobierana od użytkownika i była liczbą zmiennoprzecinkową
+# 2. Odległość w km była pobierana od użytkownika i była liczbą całkowitą
+# 3. Spalanie na 100km było pobierane od użytkownika i było liczbą
+#    zmiennoprzecinkową
+
+#cena_paliwa_w_pln = 5.08
+cena_paliwa_w_pln = float(input("Podaj cene paliwa w PLN: "))
+#odleglosc_w_km = 250
+odleglosc_w_km = int(input("Podaj odleglosc w km: "))
+#spalanie_litrow_na_100km = 6.7
+spalanie_litrow_na_100km = float(input("Ile spala Twoj samochod na 100km?: "))
+koszt_wyprawy = spalanie_litrow_na_100km * odleglosc_w_km / 100 * cena_paliwa_w_pln
+
+print('Koszt wyprawy to:')
+print(koszt_wyprawy)
