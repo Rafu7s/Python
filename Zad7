@@ -1,0 +1,24 @@
+#Zamiast petla While uzyj for
+#zmodyfikuj ten program tak by kolejne liczby pojawiały się
+#dokładnie co sekundę
+
+#print("początek")
+#sekund_do_startu = 10
+#while sekund_do_startu > 0:
+#    print(f"Do startu pozostało {sekund_do_startu}s")
+#    sekund_do_startu -= 1 # sekund_do_startu = sekund_do_startu - 1
+#print("Lecimy 🚀!")
+#print("koniec")
+
+
+
+print("początek")
+
+sekund_do_startu = 10
+
+for sekund_do_startu in range(10, 0, -1):
+    print(f"{sekund_do_startu}s")
+
+print("Lecimy 🚀!")
+
+print("koniec")
