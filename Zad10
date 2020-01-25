@@ -1,0 +1,10 @@
+# Zmodyfikuj program zadanie9 tak by pobieranie danych od użytkownika było
+# powtarzane aż użytkownik poda poprawny wiek (liczbę większą od 0).
+
+
+
+while not wiek.isdigit():
+    if int(wiek) < 0:
+        print("wiek nie może być mniejszy od 0")
+    print("niepoprawny wiek")
+    wiek = input("Podaj poprawny wiek: ")
