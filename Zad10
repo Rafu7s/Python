@@ -3,8 +3,10 @@
 
 
 
+while not wiek.isdigit() and wiek[0] == "-":
+    print("wiek nie może być mniejszy od 0")
+    wiek = input("Podaj poprawny wiek: ")
+
 while not wiek.isdigit():
-    if int(wiek) < 0:
-        print("wiek nie może być mniejszy od 0")
-    print("niepoprawny wiek")
+    print("wiek musi być liczbą")
     wiek = input("Podaj poprawny wiek: ")
