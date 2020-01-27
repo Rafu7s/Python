@@ -2,7 +2,6 @@
 # powtarzane aż użytkownik poda poprawny wiek (liczbę większą od 0).
 
 
-
 wiek = input("Podaj swoj wiek: ")
 
 while not wiek.isdigit():
