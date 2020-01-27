@@ -4,18 +4,22 @@
 
 
 wiek = input("Podaj swoj wiek: ")
-#  wiek = int(input("Podaj swoj wiek: "))
-
-while not wiek.isdigit() and wiek[0] == "-":
-    print("wiek nie może być mniejszy od 0")
-    wiek = input("Podaj poprawny wiek: ")
 
 while not wiek.isdigit():
-    print("wiek musi być liczbą")
-    wiek = input("Podaj poprawny wiek: ")
+    if wiek.isdigit() or wiek[0] == "-" and wiek[1:].isdigit():
+        if int(wiek) < 0:
+            print("wiek nie może być mniejszy od 0")
+            wiek = input("Podaj poprawny wiek: ")
+    else:
+        print("wiek musi być liczbą")
+        wiek = input("Podaj poprawny wiek: ")
+if int(wiek) % 2 == 0:
+    print("parzysty")
+else:
+    pass
 
 
-
+#Tresc_zad_9
 # if wiek.isdigit() or wiek[0] == "-" and wiek[1:].isdigit():
 #     # wiek = int(wiek)
 #     if int(wiek) < 0:
